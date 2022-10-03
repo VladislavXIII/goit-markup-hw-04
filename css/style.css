@@ -24,9 +24,9 @@ ul{
     /* outline: 2px solid red; */
 }
 .header-container{
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 /* header-logo */
 .list{
@@ -77,13 +77,16 @@ ul{
 /* contacts */
 .header-contact{
     display: flex;
-    flex-wrap: ;
-}
-.header-cont{
-    display: flex;
-    justify-content: center;
-    align-content: center;
     flex-wrap: nowrap;
+    fill: currentColor;
+}
+.header-mail{
+    display:flex
+}
+.header-icon{
+    display: block;
+    width:16px 
+    height:12
 }
 .header-link-mail{
     font-family: 'Roboto';
@@ -110,20 +113,12 @@ ul{
 .header-link-tel:focus {
     color: var(--accent-color)
 }
-.header-mail-icon{
-    width: 16px;
-    height: 12px;
-    margin-right: 10px;
-}
-.header-tel-icon{
-    height: 16px;
-    width: 10px;
-    margin-right: 10px;
-}
+
 /* header to portfolio page */
 .header-line{
     border-bottom: 1px solid #ECECEC;
 }
+
 
 /*----------------------------------------HERO-----------------------------------*/
 .hero{
@@ -366,15 +361,20 @@ ul{
     justify-content: center;
     padding: 12px;
     margin-right: 10px;
+    fill: #AFB1B8;
     cursor: pointer;
 }
 .team-soc-link:hover{
     background-color: var(--accent-color);
+    fill:#FFFFFF;
 }
 
 
 
 /*----------------------------------------PORTFOLIO--------------------------------*/
+.header-portfolio{
+    border-bottom: 1px solid #ECECEC;
+}
 .portfolio{
     padding-bottom: 94px;
 }
@@ -514,7 +514,7 @@ ul{
     margin-left: 32px;
     justify-content: center;
     align-content: center;
-    fill: #2196F3;
+    fill: #AFB1B8;
 }
 .btn-icon:hover{
     fill: var(--accent-color);
@@ -575,7 +575,7 @@ ul{
 /* ---------add section------ */
 .footer-add-section{
     display: inline-block;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     width: 206px;
     
@@ -596,6 +596,7 @@ ul{
     margin-left: 0;
     padding-left: 0;
     padding-top: 0;
+    fill:#FFFFFF
 }
 .add-soc-item{
     display: block;
@@ -621,12 +622,16 @@ ul{
     background-color: rgba(255, 255, 255, 0.1);
     display: flex;
     align-items: center;
-    justify-content: center;  
+    justify-content: center;
+    fill: #FFFFFF;  
 }
 .add-soc-link:hover{
     background-color: #2196F3;
 }
 .add-soc-icon{
+    box-sizing: border-box;
+    width: 20px;
+    height: 20px;
     padding: 0;
 }
 .add-soc-icon:hover{
