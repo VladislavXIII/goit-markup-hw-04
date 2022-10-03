@@ -21,8 +21,7 @@
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
-    <header class="header header-line">
-      <div class="container header-container">
+    <div class="container header-container">
         <a class="logo-header link" href="./index.html">
           <span class="logo-web">Web</span>Studio</a
         >
@@ -40,14 +39,20 @@
           </ul>
         </nav>
         <ul class="header-contact list">
-          <li class="header-tel">
-            <a class="header-link-mail link" href="mailto:info@devstudio.com"
-              >info@devstudio.com</a
+          <li class="header-mail">
+            <a class="header-link-mail link" href="mailto:info@devstudio.com">
+              <svg class="header-mail-icon" width="16" hight="12">
+                <use href="./images/symbol-defs.svg#icon-mail"></use>
+              </svg>
+              info@devstudio.com</a
             >
           </li>
-          <li class="header-mail">
+          <li class="header-tel">
             <a class="header-link-tel link" href="tel:+380961111111"
-              >+38 096 111 11 11</a
+              ><svg class="header-tel-icon" width="10" hight="20">
+                <use href="./images/symbol-defs.svg#icon-tel"></use>
+              </svg>
+              +38 096 111 11 11</a
             >
           </li>
         </ul>
@@ -176,28 +181,65 @@
         </div>
         
     </main>
-     <footer class="footer-style">
+    <footer class="footer-style">
       <div class="container footer-container">
-        <a class="logo-footer link" href="./index.html"
-          ><span class="logo-web">Web</span>Studio</a
-        >
-        <section class="footer-address">
-          <address class="address">
-            <p class="address-inform">м. Київ, пр-т Лесі Українки, 26</p>
-            <ul class="address-list list">
-              <li class="address-contact">
-                <a class="address-mail-link" href="mailto:info@devstudio.com"
-                  >info@devstudio.com</a
-                >
+        <div>
+          <a class="logo-footer link" href="./index.html"
+            ><span class="logo-web">Web</span>Studio</a
+          >
+          <section class="footer-address">
+            <address class="address">
+              <p class="address-inform">м. Київ, пр-т Лесі Українки, 26</p>
+              <ul class="address-list list">
+                <li class="address-contact">
+                  <a class="address-mail-link" href="mailto:info@devstudio.com"
+                    >info@devstudio.com</a
+                  >
+                </li>
+                <li>
+                  <a class="address-tel-link" href="tel:+380961111111"
+                    >+38 096 111 11 11</a
+                  >
+                </li>
+              </ul>
+            </address>
+          </section>
+        </div>
+        <div class="footer-add-section">
+          <section class="footer-add">
+            <p class="footer-add-text">приєднуйтесь</p>
+            <ul class="add-soc-list list">
+              <li class="add-soc-item">
+                <a class="add-soc-link" href="">
+                  <svg class="add-soc-icon" width="20" heaight="20">
+                    <use href="./images/symbol-defs.svg#icon-instagram"></use>
+                  </svg>
+                </a>
               </li>
-              <li>
-                <a class="address-tel-link" href="tel:+380961111111"
-                  >+38 096 111 11 11</a
-                >
+              <li class="add-soc-item">
+                <a class="add-soc-link" href="">
+                  <svg class="add-soc-icon" width="20" heaight="20">
+                    <use href="./images/symbol-defs.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="add-soc-item">
+                <a class="add-soc-link" href="">
+                  <svg class="add-soc-icon" width="20" heaight="20">
+                    <use href="./images/symbol-defs.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="add-soc-item">
+                <a class="add-soc-link" href="">
+                  <svg class="add-soc-icon" width="20" heaight="20">
+                    <use href="./images/symbol-defs.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
               </li>
             </ul>
-          </address>
-        </section>
+          </section>
+        </div>
       </div>
     </footer>
   </body>
