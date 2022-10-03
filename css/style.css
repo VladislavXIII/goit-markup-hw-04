@@ -77,6 +77,13 @@ ul{
 /* contacts */
 .header-contact{
     display: flex;
+    flex-wrap: ;
+}
+.header-cont{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: nowrap;
 }
 .header-link-mail{
     font-family: 'Roboto';
@@ -193,7 +200,52 @@ ul{
     margin-right: 0px;
 }
 
+.skill-antenna-icon::before{
+    display: block;
+    content: '';
+    height: 120px;
+    background: #F5F4FA;
+    border-radius: 4px;
+    background-size: 70px 70px;
+    background-image: url(../images/antenna.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.skill-clock-icon::before {
+    display: block;
+    content: '';
+    height: 120px;
+    background: #F5F4FA;
+    border-radius: 4px;
+    background-size: 70px 70px;
+    background-image: url(../images/clock.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.skill-diagram-icon::before {
+    display: block;
+    content: '';
+    height: 120px;
+    background: #F5F4FA;
+    border-radius: 4px;
+    background-size: 70px 70px;
+    background-image: url(../images/diagram.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.skill-space-icon::before {
+    display: block;
+    content: '';
+    height: 120px;
+    background: #F5F4FA;
+    border-radius: 4px;
+    background-size: 70px 70px;
+    background-image: url(../images/space.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
 .skill-top-text{
+    margin-top: 30px;
     margin-bottom: 10px;
     font-weight: 700;
     font-size: 14px;
@@ -314,7 +366,13 @@ ul{
     justify-content: center;
     padding: 12px;
     margin-right: 10px;
+    cursor: pointer;
 }
+.team-soc-link:hover{
+    background-color: var(--accent-color);
+}
+
+
 
 /*----------------------------------------PORTFOLIO--------------------------------*/
 .portfolio{
@@ -441,6 +499,11 @@ ul{
 
     border: 1px solid #AFB1B8;
     border-radius: 4px;
+    cursor: pointer;
+}
+.clients-btn:hover{
+    border: 1px solid var(--accent-color);
+
 }
 .btn-icon{
     width: 106px;
@@ -449,6 +512,12 @@ ul{
     margin-right: 32px;
     margin-bottom: 16px;
     margin-left: 32px;
+    justify-content: center;
+    align-content: center;
+    fill: #2196F3;
+}
+.btn-icon:hover{
+    fill: var(--accent-color);
 }
 /*----------------------------------------FOOTER--------------------------------*/
 .footer-style{
@@ -552,8 +621,15 @@ ul{
     background-color: rgba(255, 255, 255, 0.1);
     display: flex;
     align-items: center;
-    justify-content: center;
-
-    
+    justify-content: center;  
+}
+.add-soc-link:hover{
+    background-color: #2196F3;
+}
+.add-soc-icon{
+    padding: 0;
+}
+.add-soc-icon:hover{
+    fill: #FFFFFF;
 }
 
