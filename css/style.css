@@ -347,10 +347,8 @@ ul{
 }
 .team-soc-list{
     display: flex;
-    margin-left: 32px;
-    margin-right: 32px;
+    justify-content: center;
     margin-top: 16px;
-    margin-bottom: 30px;
 }
 .team-soc-link{
     height: 44px;
@@ -468,11 +466,10 @@ ul{
     color: var(--second-text-color);
 }
 /*----------------------------------------CLIENTS--------------------------------*/
+/* text */
 .clients{
     padding-top: 94px;
     padding-bottom: 94px;
-}
-.clients-container{
 }
 .clients-text{
     margin-bottom: 50px;
@@ -486,11 +483,9 @@ ul{
 
     color: #212121;
 }
+/* logo`s */
 .clients-list{
     display: flex;
-}
-.clients-link{
-    margin-right: 30px;
 }
 .clients-btn{
     width: 170px;
@@ -503,7 +498,32 @@ ul{
 }
 .clients-btn:hover{
     border: 1px solid var(--accent-color);
+}
+.clients-item{
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+    cursor: pointer;
 
+    margin-right: 30px;
+}
+.clients-item:last-child{
+    margin-right: 0px;
+}
+.clients-item:hover {
+    border: 1px solid var(--accent-color);
+}
+.clients-link-logo{
+    display: block;
+    width: 170px;
+    height: 92px;
+    justify-content: center;
+    background-color: transparent;
+}
+.clients-link-logo:hover{
+    color:var(--accent-color)
+}
+.clients-link-logo:focus {
+    color: var(--accent-color)
 }
 .btn-icon{
     width: 106px;
@@ -626,7 +646,10 @@ ul{
     fill: #FFFFFF;  
 }
 .add-soc-link:hover{
-    background-color: #2196F3;
+    background-color: var(--accent-color);
+}
+.add-soc-link:focus {
+    background-color: var(--accent-color);
 }
 .add-soc-icon{
     box-sizing: border-box;
