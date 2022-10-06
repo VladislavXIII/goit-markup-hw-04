@@ -81,12 +81,8 @@ ul{
     fill: currentColor;
 }
 .header-mail{
-    display:flex
-}
-.header-icon{
-    display: block;
-    width:16px 
-    height:12
+    /* display:flex */
+    outline: 1px solid red;
 }
 .header-link-mail{
     font-family: 'Roboto';
@@ -97,6 +93,17 @@ ul{
     line-height: 1.14;
     letter-spacing: 0.02em;    
     color: var(--second-text-color);
+    outline: 1px solid purple;
+    
+}
+.header-mail-icon{
+    width: 16px;
+    height: 12px;
+    background-size: contain;
+    outline: 1px solid blue
+}
+.header-tel{
+    /* display: flex; */
 }
 .header-link-tel{
     font-weight: 500;
@@ -105,6 +112,9 @@ ul{
     letter-spacing: 0.02em;
     color: var(--second-text-color);
 }
+.header-tel-icon{
+
+}   
 .header-link-mail:hover, 
 .header-link-tel:hover{
     color: var(--accent-color)
@@ -362,7 +372,8 @@ ul{
     fill: #AFB1B8;
     cursor: pointer;
 }
-.team-soc-link:hover{
+.team-soc-link:hover,
+.team-soc-link:focus{
     background-color: var(--accent-color);
     fill:#FFFFFF;
 }
@@ -378,6 +389,7 @@ ul{
 }
 .portfolio-section{
     padding-top: 94px;
+    padding-bottom: 94px;
 }
 .list-container{
     display: flex;
@@ -386,16 +398,22 @@ ul{
     margin-bottom: 50px;
     /* margin-right: 8px; */
 }
-.portfoilio-link{
+.portfolio-link-btn{
     margin-right: 8px;
 }
-.portfoilio-link:last-child{
+.portfolio-link-btn:last-child{
     margin-right: 0;
+}
+.portfolio-link:hover{
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 
+    0px 4px 4px rgba(0, 0, 0, 0.06), 
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+.portfolio-link:nth-last-child(-n + 3){
+    margin-bottom: 0px;
 }
 .portfolio-btn{
     display: inline-flex;
-    /* margin-right: 8px; */
-    /* margin-top: 94px; */
     background: #F5F4FA;
     border-radius: 4px;
     border-color: #F5F4FA;
@@ -404,14 +422,11 @@ ul{
     margin-right: 0px;
 }
 .portfolio-btn:hover,
-.portfolio-btn:focus{
+.portfolio-btn:focus {
     background: var(--accent-color);
     cursor: pointer;
 }
-
 .portfolio-btn-text{
-    font-family: 'Roboto';
-    font-style: normal;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.62;
@@ -427,6 +442,9 @@ ul{
 .portfolio-btn-text:focus {
     color: #FFFFFF;
     cursor: pointer;
+}
+.portfolio-btn-text:focus{
+    color: #FFFFFF;
 }
 .portfolio-list{
     display: flex;
@@ -520,7 +538,7 @@ ul{
     background-color: transparent;
 }
 .clients-link-logo:hover{
-    color:var(--accent-color)
+    /* color:var(--accent-color) */
 }
 .clients-link-logo:focus {
     color: var(--accent-color)
