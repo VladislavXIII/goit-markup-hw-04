@@ -53,7 +53,6 @@ ul{
 /* header-navigation */
 .header-list{
     display: flex;
-    margin-right: 344px;
 }
 .header-item{
     margin-right: 50px;
@@ -77,35 +76,37 @@ ul{
 /* contacts */
 .header-contact{
     display: flex;
-    flex-wrap: nowrap;
-    fill: currentColor;
+    gap: 30px;
+    margin-left: auto;
 }
 .header-mail{
     /* display:flex */
-    outline: 1px solid red;
 }
 .header-link-mail{
+    display: flex;
+    align-items: center;
     font-family: 'Roboto';
     font-style: normal;
-    padding-right: 50px;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;    
     color: var(--second-text-color);
-    outline: 1px solid purple;
-    
 }
 .header-mail-icon{
     width: 16px;
     height: 12px;
-    background-size: contain;
-    outline: 1px solid blue
+    margin-right: 10px;
+    fill: currentColor;
 }
 .header-tel{
     /* display: flex; */
 }
 .header-link-tel{
+    display: flex;
+    align-items: center;
+    font-family: 'Roboto';
+    font-style: normal;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
@@ -113,7 +114,8 @@ ul{
     color: var(--second-text-color);
 }
 .header-tel-icon{
-
+    margin-right: 10px;
+    fill: currentColor;
 }   
 .header-link-mail:hover, 
 .header-link-tel:hover{
@@ -125,7 +127,7 @@ ul{
 }
 
 /* header to portfolio page */
-.header-line{
+.header-portfolio{
     border-bottom: 1px solid #ECECEC;
 }
 
@@ -384,13 +386,17 @@ ul{
 .header-portfolio{
     border-bottom: 1px solid #ECECEC;
 }
+
+/* button */
 .portfolio{
     padding-bottom: 94px;
 }
+
 .portfolio-section{
     padding-top: 94px;
     padding-bottom: 94px;
 }
+
 .list-container{
     display: flex;
     justify-content: center;
@@ -398,34 +404,36 @@ ul{
     margin-bottom: 50px;
     /* margin-right: 8px; */
 }
+
 .portfolio-link-btn{
     margin-right: 8px;
 }
+
 .portfolio-link-btn:last-child{
     margin-right: 0;
 }
-.portfolio-link:hover{
-    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 
-    0px 4px 4px rgba(0, 0, 0, 0.06), 
-    1px 4px 6px rgba(0, 0, 0, 0.16);
-}
+
 .portfolio-link:nth-last-child(-n + 3){
     margin-bottom: 0px;
 }
+
 .portfolio-btn{
-    display: inline-flex;
+    display: flex;
     background: #F5F4FA;
     border-radius: 4px;
-    border-color: #F5F4FA;
 }
+.portfolio-btn:hover,
+.portfolio-btn:focus{
+    background: #2196F3;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
+
+}
+
 .portfolio-btn:last-child{
     margin-right: 0px;
 }
-.portfolio-btn:hover,
-.portfolio-btn:focus {
-    background: var(--accent-color);
-    cursor: pointer;
-}
+
 .portfolio-btn-text{
     font-weight: 500;
     font-size: 16px;
@@ -436,16 +444,21 @@ ul{
     padding-bottom: 6px;
     padding-right: 22px;
     padding-left: 22px;
-    color: var(--top-text-color);
+    color: var(--top-text-color)
 }
 .portfolio-btn-text:hover,
-.portfolio-btn-text:focus {
-    color: #FFFFFF;
-    cursor: pointer;
-}
 .portfolio-btn-text:focus{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+
+    text-align: center;
+    letter-spacing: 0.03em;
+
     color: #FFFFFF;
 }
+
+/* list */
 .portfolio-list{
     display: flex;
     flex-wrap: wrap;
@@ -458,6 +471,11 @@ ul{
 }
 .portfolio-link:nth-child(3n+3){
     margin-right: 0px;
+}
+.portfolio-link:hover {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
+    0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 .portfolio-img{
     display: block;
@@ -531,28 +549,33 @@ ul{
     border: 1px solid var(--accent-color);
 }
 .clients-link-logo{
-    display: block;
+    display: flex;
     width: 170px;
     height: 92px;
     justify-content: center;
+    align-items: center;
     background-color: transparent;
+    border: 1px solid #AFB1B8;
+    color: #AFB1B8;
 }
 .clients-link-logo:hover{
-    /* color:var(--accent-color) */
+    color:var(--accent-color);
+    border: 1px solid var(--accent-color);
 }
 .clients-link-logo:focus {
-    color: var(--accent-color)
+    color: var(--accent-color);
+    border: 1px solid var(--accent-color);
 }
 .btn-icon{
     width: 106px;
     height: 60px;
-    margin-top: 16px;
+    /* margin-top: 16px;
     margin-right: 32px;
     margin-bottom: 16px;
-    margin-left: 32px;
+    margin-left: 32px; */
     justify-content: center;
     align-content: center;
-    fill: #AFB1B8;
+    fill: currentColor
 }
 .btn-icon:hover{
     fill: var(--accent-color);
